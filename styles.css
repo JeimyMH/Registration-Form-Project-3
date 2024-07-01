@@ -1,0 +1,272 @@
+* {
+  box-sizing:border-box;
+  margin: 0 auto; 
+  max-width: 1024px;
+}
+
+body {
+  max-width: 1024px;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight:500;
+  font-style:normal;
+  letter-spacing: .05em;
+  background-color: powderblue;
+  padding: 25px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1, .top-nav {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.top-nav, .top-nav li {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+h1 a, .top-nav a {
+  color: ghostwhite;
+}
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+  background-color: #206777;
+}
+
+.top-nav a {
+  text-transform: uppercase;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.bio {
+  margin-top: 1.5%;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.portfolio {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1100px;
+  display:flex;
+  flex-direction: column;
+  margin: auto 0;
+  font-family: "Roboto", sans-serif;
+  gap: 15px;
+  margin-bottom: 15%;
+}
+
+.project-images {
+  width: 100%;
+}
+
+.card {
+  min-height: 150px;
+  color: ghostwhite;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  flex: 1 1 auto;
+}
+
+.box-1 {
+  background-color: #206777;
+}
+
+.box-2 {
+  background-color: #206777;
+}
+
+.box-3 {
+  background-color: #206777;
+}
+
+.box-4 {
+  background-color: #206777;
+}
+
+.box-5 {
+  background-color: #206777;
+}
+
+.box-6 {
+  background-color: #206777;
+}
+
+#contact {
+  text-align: center;
+}
+
+.contact {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.phone {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.email {
+  margin-bottom: 2rem;
+}
+
+footer {
+  display:flex;
+  align-items: center;
+  height: 80px;
+  background-color: #206777;
+  padding: 0;
+}
+
+.footer-nav a {
+  color:ghostwhite;
+}  
+
+.tablet-footer-nav {
+  display: none;
+}
+
+.full {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .top-nav li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
+
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
+
+  .top-nav a {
+    color: #165765;
+  }
+
+ .profile-bio {
+    display: flex;
+    flex-direction:row-reverse;
+    margin-bottom: 2rem;
+    gap: 3rem;
+  }
+
+  .image-container{
+    width: 200%;
+  }
+
+  .bio {
+    text-align: left;
+  }
+
+  .portfolio {
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+  
+  .card {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .full {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .footer-nav {
+    display:flex;
+    gap: 1rem;
+  }
+
+  footer {
+    gap: 20rem;
+  }
+
+  .mobile-footer-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+   
+  nav {
+    display:flex;
+  }
+
+  h1 {
+    text-align:left;
+    text-wrap: nowrap;
+  }
+
+  .top-nav {
+    text-align: end;
+  }
+ 
+  .profile-bio {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 140%;
+    gap: 10rem;
+  }
+
+  .portfolio {
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    flex-basis: calc(33.333% - 20px);
+   }
+
+  .my info {
+    margin-top: 2.0%;
+    text-align: center;
+  }
+
+  .contact {
+    width: 100%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    text-align: center;
+    color: #000;
+  }
+
+  footer {
+    gap: 35rem;
+  }
+
+  .full {
+    display: none;
+  }
+}   
