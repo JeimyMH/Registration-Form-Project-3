@@ -1,225 +1,93 @@
-* {
-  box-sizing:border-box;
-  margin: 0 auto; 
-  max-width: 1024px;
-}
-
+* 
 body {
-  max-width: 1024px;
-  min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  font-weight:500;
-  font-style:normal;
-  letter-spacing: .05em;
-  background-color: powderblue;
-  padding: 25px;
+  background: #f9f4f0;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+  margin: 0%
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
 
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-h1, .top-nav {
+.title h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  background-color: #074d5d;
+  color: white;
+  padding: 2rem;
+  margin: 0% 0%;
 }
 
-.top-nav, .top-nav li {
-  width: 100%;
+.header {
+  text-align: center;
+  color: #074d5d;
+}
+
+.paragraph {
+  text-align: center;
+  color: #074d5d;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
   margin-bottom: 2rem;
 }
 
-h1 a, .top-nav a {
-  color: ghostwhite;
+.break {
+ border-style: solid double;
+ border-bottom: thick double #000;
 }
 
-.top-nav li {
-  padding: 10px 0;
-  margin: 5px auto;
-  background-color: #206777;
+.form {
+  padding: 1rem;
 }
 
-.top-nav a {
-  text-transform: uppercase;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-  overflow: hidden;
-}
-
-.bio {
-  margin-top: 1.5%;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.portfolio {
-  text-align: center;
+legend {
+  font-size: 1rem;
   margin-bottom: 1rem;
-}
-
-.container {
-  max-width: 1100px;
-  display:flex;
-  flex-direction: column;
-  margin: auto 0;
-  font-family: "Roboto", sans-serif;
-  gap: 15px;
-  margin-bottom: 15%;
-}
-
-.project-images {
-  width: 100%;
-}
-
-.card {
-  min-height: 150px;
-  color: ghostwhite;
-  text-align: center;
-  letter-spacing: 1px;
-  padding-top: 20px;
-  flex: 1 1 auto;
-}
-
-.box-1 {
-  background-color: #206777;
-}
-
-.box-2 {
-  background-color: #206777;
-}
-
-.box-3 {
-  background-color: #206777;
-}
-
-.box-4 {
-  background-color: #206777;
-}
-
-.box-5 {
-  background-color: #206777;
-}
-
-.box-6 {
-  background-color: #206777;
-}
-
-#contact {
-  text-align: center;
 }
 
 .contact {
-  margin-bottom: 1rem;
   margin-top: 1rem;
-  text-align: center;
+  font-size: 1rem;
+  color:#074d5d;
+  
 }
 
-.phone {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+#zip {
+width: 50%;
 }
 
-.email {
-  margin-bottom: 2rem;
+button {
+  width: 100%;
+  max-width: 430px;
+  padding: 10px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  margin: 1.5rem auto 1.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: #074d5d;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
-footer {
-  display:flex;
-  align-items: center;
+.break-2 {
+  border-style: solid;
+ }
+
+ .newsletter {
+  font-size: 1rem;
+  color:#074d5d;
+}
+ 
+ textarea {
   height: 80px;
-  background-color: #206777;
-  padding: 0;
+  margin-top: 1rem;
+  width:98%;
 }
 
-.footer-nav a {
-  color:ghostwhite;
-}  
-
-.tablet-footer-nav {
-  display: none;
-}
-
-.full {
-  display: none;
-}
 
 @media (min-width: 768px) {
-
-  .top-nav li {
-    display: inline-block;
-    width: auto;
-    margin-right: 15px;
-    background-color: transparent;
-  }
-
-  .top-nav li:last-child {
-    margin-right: 0;
-  }
-
-  .top-nav a {
-    color: #165765;
-  }
-
- .profile-bio {
-    display: flex;
-    flex-direction:row-reverse;
-    margin-bottom: 2rem;
-    gap: 3rem;
-  }
-
-  .image-container{
-    width: 200%;
-  }
-
-  .bio {
-    text-align: left;
-  }
-
-  .portfolio {
-    margin-bottom: 2rem;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-bottom: 3rem;
-  }
-  
-  .card {
-    flex-basis: calc(50% - 20px);
-  }
-
-  .full {
-    display: inline-block;
-    margin-left: 20px;
-  }
-
-  .footer-nav {
-    display:flex;
-    gap: 1rem;
-  }
-
-  footer {
-    gap: 20rem;
-  }
-
-  .mobile-footer-nav {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
    
   nav {
     display:flex;
@@ -230,6 +98,7 @@ footer {
     text-wrap: nowrap;
   }
 
+  
   .top-nav {
     text-align: end;
   }
@@ -259,7 +128,7 @@ footer {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
     text-align: center;
-    color: #000;
+    color: #074d5d
   }
 
   footer {
