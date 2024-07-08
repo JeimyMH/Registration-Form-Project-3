@@ -1,106 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" The Code Review.">
+    <title>The Code Review</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <title> Professional Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">  
 </head>
 
-  <body>
+<section>
+    <header class="title"><h2>THE CODE REVIEW</h2></header>
+</section>
 
-    <nav>
-        <h1 id="student-name" class="top-name">JEIMY MORA</h1>
-        <ul class="top-nav">
-          <li><h4><a href="#">HOME</a></h4></li>
-          <li><h4><a href="#portfolio">PORTFOLIO</a></h4></li>
-          <li><h4><a href="#contact">CONTACT</a></h4></li>
-        </ul>
-    </nav>
-            <div class="profile-bio">
-            <div class="image-container">
-              <img src= "images/responsive-layout-profile.png" alt="self image">
-            </div>
-
-            <div class="bio">     
-              I'm a professional seeking to gain the knowledge and experience to break into the tech world. 
-              My current goal is to pursue a career as a Front-End Developver and continue grow.
-              I'm ready to put my new skils to work.
-            </div>
-          </div>
-                       
-    <main>
-        <h2 id="portfolio" class="portfolio">Portfolio</h2>
-      
-      <div class="container">
-
-          <div class="card box-1">
-          <img src= "images/portfolio-1.png" alt="marketing image" class="project-images">
-          <h4>Marketing Page</h4>
-          </div>
-
-          <div class="card box-2">
-          <img src= "images/portfolio-2.png" alt="search image" class="project-images">
-          <h4>Search Page</h4>
-          </div>
-
-          <div class="card box-3">
-          <img src= "images/portfolio-3.png" alt="travel image" class="project-images">
-        <h4>Travel App</h4>
-          </div>
-
-          <div class="card box-4">
-          <img src= "images/portfolio-4.png" alt="map image" class="project-images">
-        <h4>Map of Favorite Spots</h4>
-          </div>
-
-          <div class="card box-5">
-          <img src= "images/portfolio-5.png" alt="gallery image" class="project-images">
-        <h4>Gallery</h4> 
-          </div>
-
-          <div class="card box-6">
-          <img src= "images/portfolio-6.png" alt="calculator image" class="project-images">
-        <h4>Calculator</h4>  
-          </div>
-      </div>
-    </main>
-
-    <h2 id="contact" class="my info">Contact</h2>
-
-        <div class="contact statement">
-        <div>
-          If you're interested in connnecting with me or would like to more information and discuss some projects. 
-          I'd love to chat more please see my contact information below.
-        </div>
-
-        <div class="phone">       
-          <h4>PHONE: 303.455.2233</h4>
-        </div>
-
-        <div class="email">
-          <h4>EMAIL: jmora@gmail.com</h4>
-        </div>
-
-        </div>
+<form class="form">
+    
+    <h3 class="header">Sign up for our newsletter</h3>
+    <p class="paragraph">Get the latest news on how your code is doing right in your inbox</p>
+    <p class="break"></p>
+        <section class="contact">
+          <legend>Contact Information</legend>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="user_name">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="user_email">
+          <label for="phone">Phone Number</label>
+          <input type="number" id="phone" name="user_phone">
+          <label for="address1">Street Address</label>
+          <input type="text" id="address1" name="user_address">
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city">
+          <label for="state">State</label>
+          <input type="text" id="state" name="user_state">
+          <label for="zip">Zip Code</label>
+          <input type="numerical" id="zip" name="user_zip">
+        </section>
+          <button type="submit">Sign Up</button> 
+    
+    <p class="break-2"></p>
+    <form class="newsletter">
+    <legend>Newsletter</legend>  
+      <p>Select the newsletters you would like to receive</p>
+        <input type="radio" id="html" name="html_newsletter" value="HTML">
+        <label for="html">HTML News</label><br>
+        <input type="radio" id="css" name="css_newsletter" value="CSS">
+        <label for="css">CSS News</label><br>
+        <input type="radio" id="javascript" name="javascript_newsletter" value="JavaScript">
+        <label for="javascript">JavaScript News</label>  
+        <textarea id="topics" name="user-topics"></textarea>
+    </form> 
         
-        <footer>
-          <h4>JEIMY MORA</h4>
-          <ul class="footer-nav mobile-footer-nav">
-            <li ><h4><a href="#top">BACK TO TOP</a></h4></li>
-          </ul>
-
-          <ul class="footer-nav tablet-footer-nav">
-            <li ><h4><a href="#top">HOME</a></h4></li>
-          <li><h4><a href="#portfolio">PORTFOLIO</a></h4></li>
-        <li><h4><a href="#contact">CONTACT</a></h4></li>
-        </ul>
-      </footer>
-
-  </body>
-  
+        </div>
+    </main>
+</form>
 </html>
