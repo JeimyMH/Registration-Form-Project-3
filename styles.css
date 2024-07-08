@@ -43,6 +43,11 @@ legend {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+input {
+  border-radius: .25rem;
+  height: 35px;
+  display: block;
+}
 
 .contact {
   margin-top: 1rem;
@@ -84,6 +89,7 @@ button {
   height: 80px;
   margin-top: 1rem;
   width:98%;
+  border-radius: .25rem;
 }
 
 
