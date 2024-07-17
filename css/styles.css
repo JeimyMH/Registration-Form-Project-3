@@ -1,0 +1,150 @@
+* 
+body {
+  background: #f9f4f0;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+  margin: 0;
+}
+
+.title h2 {
+  text-align: center;
+  background-color: #074d5d;
+  color: white;
+  padding: 2rem;
+  margin: auto; 
+}
+
+.header {
+  text-align: center;
+  color: #074d5d;
+  margin: 0%;
+  margin-top: 1rem;
+}
+
+.paragraph {
+  text-align: center;
+  color: #074d5d;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.break {
+ border-style: solid double;
+ border-bottom: thick double #000;
+ margin: 1rem;
+}
+
+form {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+legend {
+  color:#074d5d;
+  font-size: 1.20rem;
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.contact {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color:#074d5d;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+padding:.60rem;
+border-radius: .20rem;
+text-align: right;
+}
+#state {
+  padding: .60rem;
+  text-align: left;
+}
+
+#zip {
+width: 50%;
+margin-bottom: .50rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 22px;
+  border-radius: 8px;
+  margin: 1.5rem auto 1.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: #074d5d;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.break_2 {
+  border-style: solid;
+  margin: .60rem;
+  margin-bottom: 1rem;
+ }
+ .news_selections {
+  padding: .15rem;
+  font-size: 1rem;
+  color:#074d5d;
+}
+
+ .newsletter {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color:#074d5d;
+  display: flex;
+}
+
+#javascript {
+  margin-bottom: 1.5rem;
+}
+
+#plain {
+  margin-bottom: .50rem;
+}
+
+textarea {
+  height: 80px;
+  margin-top: .50rem;
+  width:98%;
+  border-radius: .25rem;
+}
+
+.news_format {
+  margin-top: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: 400;
+}
+
+
+@media (min-width: 768px) {
+ 
+  .break {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #name, #email, #phone, 
+  #address1, #city, #state, #zip {
+    width: 50%;
+    margin-left: 15rem; 
+  }
+
+   .news_selections {
+    display: block;
+  }
+
+}
