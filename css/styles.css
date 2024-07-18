@@ -1,6 +1,6 @@
 * 
 body {
-  background: #f9f4f0;
+  background: #b7b3e8;
   font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
@@ -9,22 +9,22 @@ body {
 
 .title h2 {
   text-align: center;
-  background-color: #074d5d;
-  color: white;
+  background-color: #671b86;
+  color:whitesmoke;
   padding: 2rem;
   margin: auto; 
 }
 
 .header {
   text-align: center;
-  color: #074d5d;
-  margin: 0%;
+  color: #671b86;
+  margin: 0;
   margin-top: 1rem;
 }
 
 .paragraph {
   text-align: center;
-  color: #074d5d;
+  color: #671b86;
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: italic;
@@ -34,16 +34,16 @@ body {
 .break {
  border-style: solid double;
  border-bottom: thick double #000;
- margin: 1rem;
+ margin: 1.5rem 1rem 1.5rem 1rem;
 }
 
 form {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 legend {
-  color:#074d5d;
+  color:#671b86;
   font-size: 1.20rem;
   font-family: "Merriweather", serif;
   font-weight: 800;
@@ -53,24 +53,25 @@ legend {
 .contact {
   margin-top: 1rem;
   font-size: 1rem;
-  color:#074d5d;
+  color:#671b86;
   display: flex;
   flex-direction: column;
 }
 
-input {
-padding:.60rem;
+input:focus {
+padding: 5%;
 border-radius: .20rem;
-text-align: right;
+text-align: left;
 }
-#state {
+
+select:focus {
   padding: .60rem;
   text-align: left;
 }
 
 #zip {
 width: 50%;
-margin-bottom: .50rem;
+margin-bottom: 1rem;
 }
 
 button {
@@ -81,7 +82,7 @@ button {
   margin: 1.5rem auto 1.5rem;
   cursor: pointer;
   color: white;
-  background-color: #074d5d;
+  background-color: #671b86;
   font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
@@ -90,18 +91,18 @@ button {
 .break_2 {
   border-style: solid;
   margin: .60rem;
-  margin-bottom: 1rem;
+  margin: 1.5rem 1rem 1.5rem 1rem;
  }
  .news_selections {
   padding: .15rem;
   font-size: 1rem;
-  color:#074d5d;
+  color:#511768;
 }
 
  .newsletter {
   margin-top: 1rem;
   font-size: 1rem;
-  color:#074d5d;
+  color:w#671b86;
   display: flex;
 }
 
@@ -113,10 +114,9 @@ button {
   margin-bottom: .50rem;
 }
 
-textarea {
+textarea:focus {
   height: 80px;
-  margin-top: .50rem;
-  width:98%;
+  width:99%;
   border-radius: .25rem;
 }
 
@@ -132,19 +132,36 @@ textarea {
 
 @media (min-width: 768px) {
  
+  .contact {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contact label {
+    width: 25%;
+  }
+
   .break {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1.5rem 2.10rem 1.5rem 2.10rem;
   }
 
   #name, #email, #phone, 
-  #address1, #city, #state, #zip {
-    width: 50%;
-    margin-left: 15rem; 
+  #address, #city, #zip {
+    width: 75%; 
+  }
+  #state {
+    width: 78%;
+  }
+
+  #zip {
+    width: 30%;
+    }
+
+  .break_2 {
+    margin: 2.5rem 2.10rem 1.5rem 2.5rem;
   }
 
    .news_selections {
     display: block;
   }
-
 }
