@@ -4,7 +4,7 @@ body {
   font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
-  margin: 0;
+  margin:0;
 }
 
 .title h2 {
@@ -28,13 +28,12 @@ body {
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: italic;
-  margin-bottom: 2rem;
 }
 
 .break {
- border-style: solid double;
- border-bottom: thick double #000;
- margin: 1.5rem 1rem 1.5rem 1rem;
+  border-style: solid double;
+  border-bottom: thick double #000;
+  margin: 35px 20px 35px 20px;
 }
 
 form {
@@ -59,10 +58,10 @@ legend {
 }
 
 input:focus {
-padding: 5%;
-border-radius: .20rem;
-text-align: left;
-}
+  padding: .50rem;
+  border-radius: .20rem;
+  text-align: left;
+  }
 
 select:focus {
   padding: .60rem;
@@ -70,8 +69,48 @@ select:focus {
 }
 
 #zip {
-width: 50%;
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 55%;
+}
+
+.break_2 {
+  border-style: solid;
+  margin: 35px 0px 30px 0px;
+ }
+
+.news_selections {
+  padding: .15rem;
+  font-size: 1rem;
+  color:#511768;
+}
+
+.newsletter {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color:#671b86;
+  display: flex;
+}
+
+#javascript {
+  margin-bottom: 1.5rem;
+}
+
+#plain {
+  margin-bottom: .50rem;
+}
+
+textarea:focus {
+  height: 80px;
+  width: 100%;
+}
+
+.news_format {
+  margin-top: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: 400;
 }
 
 button {
@@ -88,80 +127,42 @@ button {
   font-style: italic;
 }
 
-.break_2 {
-  border-style: solid;
-  margin: .60rem;
-  margin: 1.5rem 1rem 1.5rem 1rem;
- }
- .news_selections {
-  padding: .15rem;
-  font-size: 1rem;
-  color:#511768;
-}
-
- .newsletter {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color:w#671b86;
-  display: flex;
-}
-
-#javascript {
-  margin-bottom: 1.5rem;
-}
-
-#plain {
-  margin-bottom: .50rem;
-}
-
-textarea:focus {
-  height: 80px;
-  width:99%;
-  border-radius: .25rem;
-}
-
-.news_format {
-  margin-top: 1rem;
-}
-
-.copyright {
-  text-align: center;
-  font-weight: 400;
-}
-
 
 @media (min-width: 768px) {
  
-  .contact {
-    flex-direction: row;
-    align-items: center;
-  }
+.contact {
+  flex-direction: row;
+  align-items: center;
+}
   
-  .contact label {
-    width: 25%;
-  }
+label {
+  width: 25%;
+}
 
-  .break {
-    margin: 1.5rem 2.10rem 1.5rem 2.10rem;
-  }
+#name, #email, #phone, 
+#address, #city, #zip {
+   width: 100%;
+}
 
-  #name, #email, #phone, 
-  #address, #city, #zip {
-    width: 75%; 
-  }
-  #state {
-    width: 78%;
-  }
+#state {
+  width: 100%;
+}
 
-  #zip {
-    width: 30%;
-    }
+#zip {
+  width: 50%;
+  margin-right: 40%;
+}
 
-  .break_2 {
-    margin: 2.5rem 2.10rem 1.5rem 2.5rem;
-  }
+::placeholder {
+    text-align: right;
+}
 
-   .news_selections {
-    display: block;
-  }
+.news_selections {
+  display: block;
+}
+
+textarea {
+  width:100%;
+}
+
 }
