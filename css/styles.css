@@ -4,15 +4,16 @@ body {
   font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
-  margin:0;
+  margin: 0;
+  margin-top: 0%
 }
 
 .title h2 {
   text-align: center;
   background-color: #671b86;
   color:whitesmoke;
-  padding: 2rem;
-  margin: auto; 
+  padding: 2.5rem;
+  margin-top: 0%;
 }
 
 .header {
@@ -57,46 +58,53 @@ legend {
   flex-direction: column;
 }
 
+#name, #email, #phone,
+#address, #city, #state, #zip {
+height: 2rem;
+}
+
 input:focus {
-  padding: .50rem;
-  border-radius: .20rem;
+  padding: .30rem;
+  border-radius: .15rem;
   text-align: left;
   }
 
 select:focus {
-  padding: .60rem;
+  padding: .45rem;
   text-align: left;
 }
 
-#zip {
+div.zip {
+  margin-top: 1rem;
   margin-bottom: 1rem;
   width: 55%;
+  color:#671b86;
 }
 
 .break_2 {
   border-style: solid;
   margin: 35px 0px 30px 0px;
  }
-
-.news_selections {
-  padding: .15rem;
-  font-size: 1rem;
-  color:#511768;
+.newsletters {
+  color:#671b86;
+  font-size: .85rem;
 }
 
-.newsletter {
-  margin-top: 2rem;
+div.newsletter {
+ padding-top: 1.5rem;
   font-size: 1rem;
   color:#671b86;
   display: flex;
 }
 
-#javascript {
-  margin-bottom: 1.5rem;
+div.news_format {
+padding-top: 1rem;
+color:#671b86;
 }
 
-#plain {
-  margin-bottom: .50rem;
+p.news {
+margin-top: 2rem;
+color:#671b86;
 }
 
 textarea:focus {
@@ -104,13 +112,17 @@ textarea:focus {
   width: 100%;
 }
 
-.news_format {
-  margin-top: 1rem;
+#plain_format {
+margin-bottom: 1.5rem;
 }
 
-.copyright {
-  text-align: center;
-  font-weight: 400;
+textarea, #textfield{
+  font-size: .85rem;
+  height: 5rem;
+  width:100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; 
+  color:#671b86;
 }
 
 button {
@@ -127,6 +139,11 @@ button {
   font-style: italic;
 }
 
+.copyright {
+  text-align: center;
+  font-weight: 400;
+  color:#671b86;
+}
 
 @media (min-width: 768px) {
  
@@ -140,17 +157,13 @@ label {
 }
 
 #name, #email, #phone, 
-#address, #city, #zip {
+#address, #city, #state{
    width: 100%;
 }
 
-#state {
-  width: 100%;
-}
-
 #zip {
-  width: 50%;
-  margin-right: 40%;
+  width: 25%;
+  margin-left: 4.10rem;
 }
 
 ::placeholder {

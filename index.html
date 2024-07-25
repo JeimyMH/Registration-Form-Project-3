@@ -35,7 +35,7 @@
 
       <div class="contact">
         <label for="phone">Phone Number</label>
-        <input type="number" id="phone" name="user_phone">
+        <input type="tel" id="phone" name="user_phone">
       </div>
 
       <div class="contact">
@@ -105,7 +105,7 @@
         </select>
       </div>
 
-      <div class="contact">
+      <div class="zip">
         <label for="zip">Zip Code</label>
         <input type="number" id="zip" name="user_zip">
       </div>
@@ -118,7 +118,7 @@
 
   <fieldset>
     <legend>Newsletter</legend>  
-      <p>Select the newsletters you would like to receive</p>
+      <p class="newsletters">Select the newsletters you would like to receive</p>
 
     <div class="newsletter">
       <input type="checkbox" id= "html" name="html_news">
@@ -135,21 +135,21 @@
       <label for="javascript">JavaScript News</label>  
     </div>
 
-  <p>Newsletter Format</p>
+  <p class="news">Newsletter Format</p>
 
     <div class="news_format">
-      <input type="radio" id="html_format" name="html_format">
+      <input type="radio" id="html_format" name="format" value="html"/>
       <label for="html_format">HTML</label><br>
     </div>
        
     <div class="news_format">
-      <input type="radio" id="plain_format" name="plain">
+      <input type="radio" id="plain_format" name="format" value="html"/>
       <label for="plain_format">Plain text</label><br>
     </div>
 
-  <p>Other topics you'd like to hear about</p>
+  <label id="textfield">Other topics you'd like to hear about</label>
 
-    <textarea id="texfield" name="user-topics"></textarea>
+    <textarea id="textfield" name="user-topics"></textarea>
   </fieldset>
         
       <button type="submit">Sign Up</button> 
