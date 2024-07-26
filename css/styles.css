@@ -116,7 +116,7 @@ textarea:focus {
 margin-bottom: 1.5rem;
 }
 
-textarea, #textfield{
+textarea, #textfield,#topics{
   font-size: .85rem;
   height: 5rem;
   width:100%;
@@ -158,7 +158,7 @@ label {
 
 #name, #email, #phone, 
 #address, #city, #state{
-   width: 100%;
+  width: 100%;
 }
 
 #zip {
@@ -167,7 +167,7 @@ label {
 }
 
 ::placeholder {
-    text-align: right;
+  text-align: right;
 }
 
 .news_selections {
